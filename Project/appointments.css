@@ -1,0 +1,141 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ede7e1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+input[type="date"]{
+    padding:8px;
+    width:200px;
+    font-size:14px;
+}
+header {
+    background: #4b281e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    position:sticky;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #c4a99b;
+    padding: 20px;
+    width: 100%;
+    gap:10px;
+}
+
+nav a {
+    font-weight: bold;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius:50px;
+    border:1px solid black;
+    gap:10px;
+    flex: 1;
+    text-align: center;
+    align-items:center;
+    width:100%;
+}
+
+nav a:hover {
+    background: #4b281e;
+    color:white;
+    border-color:white;
+}
+
+.container {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin:20px;
+    border:2px solid black;
+    border-radius:10px;
+    align-items: center;
+   background-color: #ede7e1;
+    
+}
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea,
+.appointment-form button {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-form button {
+    background: #c4a99b;
+    color: black;
+    border: none;
+}
+
+.appointment-form button:hover {
+    background: #4b281e;
+    color:white;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    header{
+        width:100%;
+    }
+    nav {
+        width:90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        flex: none;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .appointment-form {
+        width: 90%;
+    }
+}
+@media(max-width:320px){
+    .container{
+        width:230px;
+    }
+
+}
+footer {
+    background-color: #4b281e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    width:100%;
+    text-decoration: none;
+}

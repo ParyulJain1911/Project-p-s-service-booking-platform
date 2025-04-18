@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="appointments.css">
+    <script>
+        window.onload=function(){
+            let submit=document.getElementById("submit")
+            let reset=document.getElementById("reset")
+             submit.addEventListener("click",function(){
+                alert("Your Appointment is Booked!");
+             });
+             submit.addEventListener("click",function(){
+                document.getElementById("output").innerText="Thank You For Booking An Appointment.";
+             });
+             reset.addEventListener("click",function(){
+                document.getElementById("output").innerText="";
+             });
+        };
+    </script>
+</head>
+<body>
+    <header>Book an Appointment</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="ourservices.html">Our Services</a>
+        <a href="appointment.html">Contact Us</a>
+        
+    </nav>
+    <div class="container appointment-form">
+        <h2>Schedule an Appointment</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required >
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option value="">Select Professional</option>
+                <option value="doctor">Doctor</option>
+                <option value="teacher">Teacher</option>
+                <option value="lawyer">Lawyer</option>
+            </select>
+            <input type="text" placeholder="Enter Professional's Name" required>
+            <label>Enter Date:-</label>
+            <input type="date" placeholder="Enter Date"  required>
+            <label>Enter Time:-</label>
+            <input type="time" placeholder="Enter Time" required>
+            <textarea placeholder="Your Message" ></textarea>
+            <button type="submit" id="submit">Book Now</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+        <p id="output"></p>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p>Jain Paryul</p>
+        <p>Parmar Vishwa</p>
+        <p>Chauhan Kena</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
